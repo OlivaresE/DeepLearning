@@ -11,7 +11,7 @@ En general, se trabajó sobre un dataset reducido por las limitaciones de hardwa
 puede significar mucho tiempo perdido ya que cada operación sobre los datos conlleva un tiempo considerable.
 Pudo correrse el modelo CNN con una baja cantidad de épocas sobre el dataset completo para evaluar la performance vs el modelo sobre el dataset con dataset reducido.
 Se usó como parámetro de evaluación del modelo el balanced accuracy (bacc en los notebooks) y se observó:
-1) Trabajando sobre el dataset entero, con el modelo CNN el aumento en los valores de bacc es muy bajo de epoca a epoca para el esfuerzo computacional que requiere cada época.
+1) Trabajando sobre el dataset entero con el modelo CNN, el aumento en los valores de bacc es muy bajo de epoca a epoca comparado al esfuerzo computacional que requiere cada época.
 2) Al contrario de lo esperado, el bacc aumenta entre iteraciones de épocas para el caso del dataset reducido con CNN. 
 3) En el modelo MLP se ve un aumento constante y sostenido del bacc entre iteraciones de épocas de 0.24 a 0.4.
 4) Mlflow con el modelo CNN y aplicado sobre el dataset entero, falla al no ser suficiente la RAM para correr los archivos. Sobre esto se probaron muchas alternativas y lamentablemente no fue factible correr sobre todo el dataset y generar los archivos de mlflow para observar en la UI.
@@ -19,4 +19,4 @@ Se usó como parámetro de evaluación del modelo el balanced accuracy (bacc en 
 
 Se pudo cumplir con los requisitos de la materia, implementando modelos reales sobre el dataset. Los problemas centrales tuvieron que ver con la imposibilidad técnica de probar en
 tiempo los modelos en Nabucodonosor y el límite de hardware de Colaboratory. También, se observó que el desempeño de los modelos simples como el MLP y CNN con parámetros 
-básicos es bastante pobre.
+básicos es bastante pobre pero el desempeño del modelo MLP fue notoriamente superior en comparación.
