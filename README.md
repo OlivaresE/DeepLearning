@@ -12,7 +12,7 @@ puede significar mucho tiempo perdido ya que cada operación sobre los datos con
 Pudo correrse el modelo CNN con una baja cantidad de épocas sobre el dataset completo para evaluar la performance vs el modelo sobre el dataset con dataset reducido.
 Se usó como parámetro de evaluación del modelo el balanced accuracy (bacc en los notebooks) y se observó:
 1) Trabajando sobre el dataset entero con el modelo CNN, el aumento en los valores de bacc es muy bajo de epoca a epoca comparado al esfuerzo computacional que requiere cada época.
-2) Al contrario de lo esperado, el bacc aumenta entre iteraciones de épocas para el caso del dataset reducido con CNN. 
+2) Al contrario de lo esperado, el bacc no aumenta entre iteraciones de épocas para el caso del dataset reducido con CNN, manteniéndose en un rango similar de valores (alrededor de 0.25)
 3) En el modelo MLP se ve un aumento constante y sostenido del bacc entre iteraciones de épocas de 0.24 a 0.4.
 4) Mlflow con el modelo CNN y aplicado sobre el dataset entero, falla al no ser suficiente la RAM para correr los archivos. Sobre esto se probaron muchas alternativas y lamentablemente no fue factible correr sobre todo el dataset y generar los archivos de mlflow para observar en la UI.
 5) Para todos los modelos, en general, se obtienen valores bajos del parámetro, alejándonos del rango óptimo.
