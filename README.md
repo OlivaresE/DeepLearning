@@ -11,7 +11,7 @@ En general, se trabajó sobre un dataset reducido por las limitaciones de hardwa
 puede significar mucho tiempo perdido ya que cada operación sobre los datos conlleva un tiempo considerable.
 Pudo correrse el modelo CNN con una baja cantidad de épocas sobre el dataset completo para evaluar la performance vs el modelo sobre el dataset con dataset reducido.
 Se usó como parámetro de evaluación del modelo el balanced accuracy (bacc en los notebooks) y se observó:
-1) Al contrario de lo esperado, el bacc aumenta entre iteraciones de épocas.
+1) Al contrario de lo esperado, el bacc aumenta entre iteraciones de épocas para el caso del dataset reducido con CNN. Para el mismo modelo, trabajando sobre el dataset entero, el aumento en los valores de bacc es muy bajo de epoca a epoca.
 2) Se obtienen valores bajos del parámetro.
 
 Se pudo cumplir con los requisitos de la materia, implementando modelos reales sobre el dataset. Los problemas centrales tuvieron que ver con la imposibilidad técnica de probar en
