@@ -1,5 +1,5 @@
 # DeepLearning
-Prácticos materia optativa Deep Learning @ Diplo Datos Cohorte 2020/2021
+Práctica Deep Learning
 
 El repositorio cuenta con tres (3) Notebooks desarrolladas en Colaboratory y sus correspondientes archivos de MlFlow. En ellas se prueban los siguientes tres experimentos sobre el dataset del MeLiChallenge del año 2019:
 
@@ -17,6 +17,6 @@ Se usó como parámetro de evaluación del modelo el balanced accuracy (bacc en 
 4) Mlflow con el modelo CNN y aplicado sobre el dataset entero, falla al no ser suficiente la RAM para correr los archivos. Sobre esto se probaron muchas alternativas y lamentablemente no fue factible correr sobre todo el dataset y generar los archivos de mlflow para observar en la UI.
 5) Para todos los modelos, en general, se obtienen valores bajos del parámetro, alejándonos del rango óptimo.
 
-Se pudo cumplir con los requisitos de la materia, implementando modelos reales sobre el dataset. Los problemas centrales tuvieron que ver con la imposibilidad técnica de probar en
+Se implementaron modelos reales sobre el dataset. Los problemas centrales tuvieron que ver con la imposibilidad técnica de probar en
 tiempo los modelos en Nabucodonosor y el límite de hardware de Colaboratory. También, se observó que el desempeño de los modelos simples como el MLP y CNN con parámetros 
 básicos es bastante pobre pero el desempeño del modelo MLP fue notoriamente superior en comparación.
